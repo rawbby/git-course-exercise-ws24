@@ -18,18 +18,18 @@ Um Git personalisiert und optimal zu nutzen, sollten einige Einstellungen global
 - **Standardbranch definieren:**  
   `git config --global init.defaultBranch <Branch-Name>` (z.B. `main`)
 
-- **Zeilenumbrüche (AutoCRLF):**  
-  - Für Linux: `git config --global core.autocrlf input`
-  - Für Windows: `git config --global core.autocrlf true`
+- **Zeilenumbrüche (AutoCRLF):**
+    - Für Linux: `git config --global core.autocrlf input`
+    - Für Windows: `git config --global core.autocrlf true`
 
 ### Grundlegende Kommandos
 
 1. **Repository initialisieren**  
    `git init` erstellt ein neues Git-Repository im aktuellen Verzeichnis.
 
-2. **Dateien zur Versionskontrolle hinzufügen**  
-   - `git add <Datei/Ordner>` fügt spezifische Dateien hinzu.
-   - `git add .` fügt alle geänderten Dateien zur Staging Area hinzu.
+2. **Dateien zur Versionskontrolle hinzufügen**
+    - `git add <Datei/Ordner>` fügt spezifische Dateien hinzu.
+    - `git add .` fügt alle geänderten Dateien zur Staging Area hinzu.
 
 3. **Status der Dateien prüfen**  
    `git status` zeigt den aktuellen Status des Arbeitsverzeichnisses und der Staging Area an, inklusive ungestagter und gestagter Änderungen.
@@ -43,3 +43,10 @@ Um Git personalisiert und optimal zu nutzen, sollten einige Einstellungen global
 6. **Änderungen festschreiben**  
    `git commit -m "Beschreibung der Änderung"` speichert die Änderungen dauerhaft im Repository und versieht sie mit einer Nachricht zur besseren Nachverfolgbarkeit.
 
+7. **Branches verwalten**
+    - **Branch anzeigen und erstellen:**  
+      `git branch` zeigt die vorhandenen Branches im Repository an und markiert den aktuell aktiven Branch.  
+      `git branch <Branch-Name>` erstellt einen neuen Branch. Branches werden verwendet, um separate Entwicklungsstränge für neue Features oder Bugfixes zu verwalten, ohne den Hauptcode zu beeinträchtigen.
+
+    - **Zwischen Branches wechseln:**  
+      `git switch <Branch-Name>` wechselt zu einem bestehenden Branch. Dieser Befehl wird verwendet, um den Kontext zwischen verschiedenen Entwicklungszweigen zu ändern und z.B. zwischen Feature-Branches und dem Haupt-Branch zu navigieren.

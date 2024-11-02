@@ -1,5 +1,11 @@
 Question A
-Question B
-Question C
-Question D
+1,000,000
 
+Question B
+240,000
+
+Question C
+23%
+
+Question D
+84%
